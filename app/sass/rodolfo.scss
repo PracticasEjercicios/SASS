@@ -1,0 +1,97 @@
+
+/*
+*	Mixins
+*/
+
+@mixin mleft($margin) {
+	margin-left: $margin;
+}
+
+@mixin mright($margin) {
+	margin-right: $margin;
+}
+
+@mixin pad_top_bot {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@mixin shadow {
+	box-shadow: 0px 0px 20px 0px grey;
+}
+
+
+/*
+*	Variables
+*/
+
+$header_text_color: white;
+$header_image: url(https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/geometric-cave.jpg?14590251784806636780);
+$header_bottom_color: black;
+
+
+#header {
+	background-image: $header_image;
+	color: $header_text_color;
+	@include shadow;
+
+	#header_top {
+		@include pad_top_bot;
+
+		.display_flex {
+			align-items: center;
+			justify-content: flex-end;
+
+			span {
+				@include mleft(20px);
+			}
+		}
+	}
+
+	#header_main {
+		text-align: center;
+
+		h1 {
+			font-size: 70px;
+			margin: 0px;
+		}
+
+		div {
+			font-size: 10px;
+		}
+	}
+
+	#header_bottom {
+		background-color: $header_bottom_color;
+
+		.container {
+			@include pad_top_bot;
+		}
+
+		span {
+			@include mright(20px);
+		}
+	}
+}
+
+#content {
+	
+	.presentation {
+		@include shadow;
+
+		img {
+			width: 100%;
+		}
+
+		div {
+			@include pad_top_bot;
+			@include mleft(15px);
+		}
+	}
+}
+
+.display_flex {
+	display: flex;
+}
+
+

@@ -1,0 +1,60 @@
+/*
+*	Mixins
+*/
+/*
+*	Variables
+*/
+#header {
+  background-image: url(https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/geometric-cave.jpg?14590251784806636780);
+  color: white;
+  box-shadow: 0px 0px 20px 0px grey;
+}
+#header #header_top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header #header_top .display_flex {
+  align-items: center;
+  justify-content: flex-end;
+}
+#header #header_top .display_flex span {
+  margin-left: 20px;
+}
+#header #header_main {
+  text-align: center;
+}
+#header #header_main h1 {
+  font-size: 70px;
+  margin: 0px;
+}
+#header #header_main div {
+  font-size: 10px;
+}
+#header #header_bottom {
+  background-color: black;
+}
+#header #header_bottom .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header #header_bottom span {
+  margin-right: 20px;
+}
+
+#content .presentation {
+  box-shadow: 0px 0px 20px 0px grey;
+}
+#content .presentation img {
+  width: 100%;
+}
+#content .presentation div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 15px;
+}
+
+.display_flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=rodolfo.css.map */
